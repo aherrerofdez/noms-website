@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> noms </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Noms Info Website">
+    <meta name="keywords" content="noms, food, nomsfoods">
+    <meta name="author" content="Ana Herrero">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <a href="home.html"><img src="img/noms_logo.webp" alt="noms logo"></a>
+        <nav>
+            <a class="main-color" href="#what"> What is noms </a>
+            <a class="main-color" href="#how"> How to noms </a>
+            <a class="main-color" href="#meet"> Meet us </a>
+            <a class="main-color" href="#chat"> Let's chat </a>
+            <a href="https://www.instagram.com/noms.foods/" class="fa fa-instagram main-color" style="font-size:20px"></a>
+        </nav>
+    </header>
+
+    <div id="main" class="row2">
+        <div class="column2">
+            <img class="m-left p-top" src="img/noms_circle_logo.webp" alt="noms circle logo">
+            <p class="h1 m-left main-color m-bottom m-top l-double"> for everyone, <br /> everyday </p>
+            <p class="m-left m-bottom l-xsingle"> Still wondering what to eat tonight? <br /> We got you. </p>
+            <button class="m-left btn-join" type="button" onclick="document.getElementById('meet').scrollIntoView();"> JOIN US </button>
+            <p class="m-left sm main-color"> SUPPORTED BY </p>
+            <img class="m-left op" src="img/ignite_logo.webp" alt="ignite logo">
+        </div>
+        <div class="column2 back-color center">
+            <a href="https://ignite.aaltoes.com/"><img id="mockups" src="img/app_mockups.webp"
+                    alt="noms app mockups"></a>
+        </div>
+    </div>
+
+    <section id="what" class="sec-color">
+        <p class="h2 marg-bottom"> What if food was easy? </p>
+        <p class="point main-color h2 marg-bottom marg-top"> · </p>
+        <p class="text marg-top"> What if you no longer had to wonder about what to eat tonight, <br />
+            but instead would have food that is <br />
+            <strong> easy and fast to prepare, tasty and healthy, all whilst being affordable? </strong> <br />
+        </p>
+        <p class="text"> What if you instantly knew what to do with that weird ingredient in your fridge? <br />
+            Or how to make food without going to the grocery store everyday? <br /> </p>
+        <p class="text"> <strong> That's why noms is here. </strong></p>
+
+    </section>
+
+    <section id="how" class="sec-color">
+        <p class="h2 marg-bottom"> How to noms </p>
+        <p class="point main-color h2 marg-bottom marg-top"> · </p>
+        <div class="m-left m-right">
+            <div class="row3">
+                <div class="column3">
+                    <img class="usps" src="img/search.webp" alt="search screen of the app">
+                    <p class="h3 sec-color l-single"> 1 <br /> What to eat? </p>
+                    <p class="text p-small"> Simply search by ingredient and immediately know how to use it, or swipe
+                        through personalized suggestions. <br />
+                        <br /> No more eating weird food combinations.
+                    </p>
+                </div>
+                <div class="column3">
+                    <img class="usps" src="img/recipe.webp" alt="recipe example of the app">
+                    <p class="h3 sec-color l-single"> 2 <br /> How to cook? </p>
+                    <p class="text p-small"> Our one-screen recipes could not be more efficient - all information you
+                        could ever need, right with one glance. <br />
+                        <br /> No scrolling, no touching with dirty fingers.
+                    </p>
+                </div>
+                <div class="column3">
+                    <img class="usps" src="img/bundle.webp" alt="bundle example of the app">
+                    <p class="h3 sec-color l-single"> 3 <br /> How to save? </p>
+                    <p class="text p-small"> Save money and time but also reduce food waste by using up all your
+                        ingredients with our bundles. <br />
+                        <br /> One grocery trip, food for an entire week.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="meet" class="sec-color">
+        <p class="h2 marg-bottom"> Meet us </p>
+        <p class="point main-color h2 marg-bottom marg-top"> · </p>
+        <img class="m-top circle" src="img/christina.webp" alt="christina">
+        <p class="uppercase-styled main-color"> BEHIND THE FOOD </p>
+        <p class="h3 sec-color"> Christina Ivanova </p>
+        <a href="https://www.linkedin.com/in/christina-ivanova" class="main-color icon" style="padding: 0">
+            <i class="fa fa-linkedin" style="font-size:36px"></i>
+        </a>
+        <p class="text p-small"> christina@nomsfoods.com </p>
+    </section>
+
+    <section id="chat" class="sec-color">
+        <div class="row2">
+            <div class="column2">
+                <p class="h2 marg-bottom"> Let's chat </p>
+                <p class="point main-color h2 marg-bottom marg-top"> · </p>
+                <form>
+                    <div>
+                        <input style="margin-right: 20px;" type="text" name="name" value="" placeholder="Name" required="" maxlength="100" aria-label="Name">
+                        <input type="email" name="email" value="" placeholder="Email" required="" pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" aria-label="Email">        
+                    </div>
+                    <textarea placeholder="Type your message here" required="" spellcheck="true"></textarea>
+                </form>
+                <button class="btn-send sec-color" type="button" onclick=""> Send </button>
+            </div>
+            <div class="column2">
+                <img src="img/food.webp" alt="example of noms meal">
+            </div>
+        </div>
+    </section>
+
+    <div id="instagram-carousel" class="row3">
+        <div class="column3">
+            <div style="margin-right: 10px;">
+                <blockquote class="instagram-media ig-feed" data-instgrm-permalink="https://www.instagram.com/p/CS_tMz0IztW/"></blockquote>
+                <script async src="http://www.instagram.com/embed.js"></script>
+            </div>
+        </div>
+        <div class="column3">
+            <div style="margin-left: 5px; margin-right: 5px">
+                <blockquote class="instagram-media ig-feed" data-instgrm-permalink="https://www.instagram.com/p/CR9Gn7TI6Ki/"></blockquote>
+                <script async src="http://www.instagram.com/embed.js"></script>
+            </div>
+        </div>
+        <div class="column3">
+            <div style="margin-left: 10px;">
+                <blockquote class="instagram-media ig-feed" data-instgrm-permalink="https://www.instagram.com/p/CRys4PvIPw2/"></blockquote>
+                <script async src="http://www.instagram.com/embed.js"></script>
+            </div>
+        </div>
+    </div>
+
+    <div id="load-more">
+        <button class="btn-load back-color sec-color" type="button" onclick=""> Load More </button>
+    </div>
+
+    <footer class="sec-color back-color">
+        <div class="row3">
+            <div class="column3">
+                <p class="f-heading"> FIND US </p>
+                <p class="text p-small"> Betonimiehenkuja 3D <br /> 02150 Espoo, Finland </p>
+            </div>
+            <div class="column3">
+                <p class="f-heading"> REACH US </p>
+                <p class="text p-small"> christina@nomsfoods.com </p>
+            </div>
+            <div class="column3">
+                <p class="f-heading"> FOLLOW US </p>
+                <div>
+                    <a href="https://www.linkedin.com/company/75008175/admin/" class="main-color icon"
+                        style="padding: 0; margin-right: 6px;">
+                        <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+                    </a>
+                    <a href="https://www.instagram.com/noms.foods/" class="main-color icon"
+                        style="padding: 0; margin-left: 6px;">
+                        <i class="fa fa-instagram" style="font-size:36px"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="copyright">
+        <p class="copyright"> Copyright © 2022 noms. All rights reserved. Developed by Ana Herrero. </p>
+    </div>
+</body>
+
+</html>
