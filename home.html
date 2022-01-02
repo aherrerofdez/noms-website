@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script type="text/javascript" src="home.js"></script>
 </head>
 
 <body>
     <header>
-        <a href="home.html"><img src="img/noms_logo.webp" alt="noms logo"></a>
+        <a href="home.html"><img src="img/noms_logo.png" alt="noms logo"></a>
         <nav>
             <a class="main-color" href="#what"> What is noms </a>
             <a class="main-color" href="#how"> How to noms </a>
@@ -26,16 +27,17 @@
 
     <div id="main" class="row2">
         <div class="column2">
-            <img class="m-left p-top" src="img/noms_circle_logo.webp" alt="noms circle logo">
+            <img class="m-left p-top" src="img/noms_circle_logo.png" alt="noms circle logo">
             <p class="h1 m-left main-color m-bottom m-top l-double"> for everyone, <br /> everyday </p>
             <p class="m-left m-bottom l-xsingle"> Still wondering what to eat tonight? <br /> We got you. </p>
             <button class="m-left btn-join" type="button" onclick="document.getElementById('meet').scrollIntoView();"> JOIN US </button>
             <p class="m-left sm main-color"> SUPPORTED BY </p>
-            <img class="m-left op" src="img/ignite_logo.webp" alt="ignite logo">
+            <a href="https://ignite.aaltoes.com/">
+                <img class="m-left op" src="img/ignite_logo.png" alt="ignite logo">
+            </a>
         </div>
         <div class="column2 back-color center">
-            <a href="https://ignite.aaltoes.com/"><img id="mockups" src="img/app_mockups.webp"
-                    alt="noms app mockups"></a>
+            <img id="mockups" src="img/app_mockups.png" alt="noms app mockups">
         </div>
     </div>
 
@@ -58,7 +60,7 @@
         <div class="m-left m-right">
             <div class="row3">
                 <div class="column3">
-                    <img class="usps" src="img/search.webp" alt="search screen of the app">
+                    <img class="usps" src="img/search.png" alt="search screen of the app">
                     <p class="h3 sec-color l-single"> 1 <br /> What to eat? </p>
                     <p class="text p-small"> Simply search by ingredient and immediately know how to use it, or swipe
                         through personalized suggestions. <br />
@@ -66,7 +68,7 @@
                     </p>
                 </div>
                 <div class="column3">
-                    <img class="usps" src="img/recipe.webp" alt="recipe example of the app">
+                    <img class="usps" src="img/recipe.png" alt="recipe example of the app">
                     <p class="h3 sec-color l-single"> 2 <br /> How to cook? </p>
                     <p class="text p-small"> Our one-screen recipes could not be more efficient - all information you
                         could ever need, right with one glance. <br />
@@ -74,7 +76,7 @@
                     </p>
                 </div>
                 <div class="column3">
-                    <img class="usps" src="img/bundle.webp" alt="bundle example of the app">
+                    <img class="usps" src="img/bundle.png" alt="bundle example of the app">
                     <p class="h3 sec-color l-single"> 3 <br /> How to save? </p>
                     <p class="text p-small"> Save money and time but also reduce food waste by using up all your
                         ingredients with our bundles. <br />
@@ -88,7 +90,7 @@
     <section id="meet" class="sec-color">
         <p class="h2 marg-bottom"> Meet us </p>
         <p class="point main-color h2 marg-bottom marg-top"> · </p>
-        <img class="m-top circle" src="img/christina.webp" alt="christina">
+        <img class="m-top circle" src="img/christina.png" alt="christina">
         <p class="uppercase-styled main-color"> BEHIND THE FOOD </p>
         <p class="h3 sec-color"> Christina Ivanova </p>
         <a href="https://www.linkedin.com/in/christina-ivanova" class="main-color icon" style="padding: 0">
@@ -102,17 +104,21 @@
             <div class="column2">
                 <p class="h2 marg-bottom"> Let's chat </p>
                 <p class="point main-color h2 marg-bottom marg-top"> · </p>
-                <form>
+                <form action="mailto:christina@nomsfoods.com" method="GET">
                     <div>
                         <input style="margin-right: 20px;" type="text" name="name" value="" placeholder="Name" required="" maxlength="100" aria-label="Name">
                         <input type="email" name="email" value="" placeholder="Email" required="" pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" aria-label="Email">        
                     </div>
-                    <textarea placeholder="Type your message here" required="" spellcheck="true"></textarea>
+                    <div>
+                        <textarea placeholder="Type your message here" required="" spellcheck="true"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn-send sec-color" type="submit" onclick=""> Send </button>
+                    </div>
                 </form>
-                <button class="btn-send sec-color" type="button" onclick=""> Send </button>
             </div>
             <div class="column2">
-                <img src="img/food.webp" alt="example of noms meal">
+                <img src="img/food.png" alt="example of noms meal">
             </div>
         </div>
     </section>
@@ -136,10 +142,48 @@
                 <script async src="http://www.instagram.com/embed.js"></script>
             </div>
         </div>
+        <!-- FIRST LOAD -->
+        <div id="load-feed" class="column3 hidden">
+            <div style="margin-right: 10px;">
+                <blockquote class="instagram-media ig-feed" data-instgrm-permalink="https://www.instagram.com/p/CRkpSq9s003/"></blockquote>
+                <script async src="http://www.instagram.com/embed.js"></script>
+            </div>
+        </div>
+        <div id="load-feed" class="column3 hidden">
+            <div style="margin-left: 5px; margin-right: 5px">
+                <blockquote class="instagram-media ig-feed" data-instgrm-permalink="https://www.instagram.com/p/CRkpNvLszG-/"></blockquote>
+                <script async src="http://www.instagram.com/embed.js"></script>
+            </div>
+        </div>
+        <div id="load-feed" class="column3 hidden">
+            <div style="margin-left: 10px;">
+                <blockquote class="instagram-media ig-feed" data-instgrm-permalink="https://www.instagram.com/p/CRkpMHGMNsL/"></blockquote>
+                <script async src="http://www.instagram.com/embed.js"></script>
+            </div>
+        </div>
+        <!-- SECOND LOAD -->
+        <div id="load-feed2" class="column3 hidden">
+            <div style="margin-right: 10px;">
+                <blockquote class="instagram-media ig-feed" data-instgrm-permalink="https://www.instagram.com/p/CRkpB7qMCzm/"></blockquote>
+                <script async src="http://www.instagram.com/embed.js"></script>
+            </div>
+        </div>
+        <div id="load-feed2" class="column3 hidden">
+            <div style="margin-left: 5px; margin-right: 5px">
+                <blockquote class="instagram-media ig-feed" data-instgrm-permalink="https://www.instagram.com/p/CRko_klMFUx/"></blockquote>
+                <script async src="http://www.instagram.com/embed.js"></script>
+            </div>
+        </div>
+        <div id="load-feed2" class="column3 hidden">
+            <div style="margin-left: 10px;">
+                <blockquote class="instagram-media ig-feed" data-instgrm-permalink="https://www.instagram.com/p/CRko9kOMm-4/"></blockquote>
+                <script async src="http://www.instagram.com/embed.js"></script>
+            </div>
+        </div>
     </div>
 
-    <div id="load-more">
-        <button class="btn-load back-color sec-color" type="button" onclick=""> Load More </button>
+    <div class="load-more">
+        <button id="btn-load" class="btn-load back-color sec-color" type="button" onclick="loadFeed()"> Load More </button>
     </div>
 
     <footer class="sec-color back-color">
