@@ -14,10 +14,10 @@ See details in here:
 1. Not adapted for mobile
 2. Current ig feed format is not automated:
     - This means three things: 
-        a) current maximum number of IG posts shown is 9 (displayed as 3 by 3). By default only 3 are shown, 
+        1. current maximum number of IG posts shown is 9 (displayed as 3 by 3). By default only 3 are shown, 
         and each time that "Load More" button is clicked 3 more appear.
-        b) in order to show the last posts the links to the ig posts should be changed in lines: 129, 135, 141, 148, 154, 160, 167, 173, 179 of the file "home.html",
+        2. in order to show the last posts the links to the ig posts should be changed in lines: 129, 135, 141, 148, 154, 160, 167, 173, 179 of the file "home.html",
         specifically where it says data-instgrm-permalink="" -> in between those quotes is where the instagram post link should be added.
-        c) one of the benefits of this display is that one can choose which 3 posts to show first, and which 9 posts show in total, and in which order.
+        3. one of the benefits of this display is that one can choose which 3 posts to show first, and which 9 posts show in total, and in which order.
 3. Current form submission calls a "mailto" action which might not be the greatest for user experience.
     
